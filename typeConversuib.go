@@ -15,10 +15,4 @@ func main() {
 
 	fmt.Printf("%v \t %T \n", stringNumber, stringNumber)
 
-	var asciNumber int 
-	asciNumber = strconv.Atoi(stringNumber)
-
-	fmt.Printf("%v \t %T \n", asciNumber, asciNumber)
-
-
 }
