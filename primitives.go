@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 
@@ -8,10 +10,10 @@ func main() {
 	//Boolean
 	//By default boolean initialization is false
 	var booldef  bool
-	fmt.Printf("Deafult value: %v \t %T\n", booldef, booldef)
+	fmt.Printf("Deafult value: %v \t  Type: %T\n", booldef, booldef)
 
 	var boolean bool  = false
-	fmt.Printf("Initialized value : %v \t %T\n", boolean, boolean)
+	fmt.Printf("Initialized value : %v \t  Type: %T\n", boolean, boolean)
 
 	//Initialization and conditional testing
 	boolTest := 1 ==1
@@ -27,10 +29,11 @@ func main() {
 
 		N.B for any types of operation you should need to same type of operands or you have to cast it as same type
 	*/
-
 	fmt.Println("\nPrinting Integers \n")
+
+
 	var in8  int8 = 12
-	fmt.Printf("int8 %v \t %T \n", in8, in8)
+	fmt.Printf("int8 %v \t  Type: %T \n", in8, in8)
 	 var a int  = 10
 	 var b int8 = 5
 	 /*
@@ -45,7 +48,44 @@ func main() {
 
 
 
+	// Floating
+	/* 
+		these are mainly 2 types
+
+		float32 range +-1.18E-38 to +-3.4E38
+		float64 range +-2.23E-208 to +-1.8E308
+
+		N.B: there are no bitwise operator for floating point number.  Bitwise operator is only work on integer value. 
+
+	*/
+
+	fmt.Println("\nPrinting Floating \n")
+
+	var f32 float32 = 3.23
+	 f32 = 1.23e5
+	
+	fmt.Println(f32)
 
 
+
+	// Complex
+	/* 
+		Complex number is mainly two types
+		complec128, complex64
+
+		IN complex by number real operation is used for finding the real part of this nunmber
+
+		N.B: Modulus operation is not available in complex number system
+	*/
+
+	fmt.Println("\nPrinting Complex \n")
+
+	var cxa  complex64 = 1+9i
+	var cxb complex64 = 2+7i
+	fmt.Printf("Summation of Complex Number is %v \n", cxa+cxb)
+	fmt.Printf("Abstruction of Complex Number is %v \n", cxa-cxb)
+	fmt.Printf("Multiplication of Complex Number is %v \n", cxa*cxb)
+	fmt.Printf("Division of Complex number's real part is %v \n", real(cxa/cxb))
+	fmt.Printf("Division of Complex number's complex part is %v \n", complex(5,6))
 
 }
