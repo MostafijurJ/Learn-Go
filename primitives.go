@@ -88,4 +88,32 @@ func main() {
 	fmt.Printf("Division of Complex number's real part is %v \n", real(cxa/cxb))
 	fmt.Printf("Division of Complex number's complex part is %v \n", complex(5,6))
 
+	// Text 
+	/* 
+
+		IN complex by number real operation is used for finding the real part of this nunmber
+
+		N.B: Modulus operation is not available in complex number system
+	*/
+
+	fmt.Println("\nText Types \n")
+	
+
+	 text := "Hello World"
+	 //if we don't cast it, it will printed the ascii value of respected character.
+	fmt.Printf("Text %v \t Tyep: %T \n", string(text[2]), text)
+
+	// Convert a string into a byte slice or a set of bytes
+	byteArr := [] byte(text)
+	fmt.Printf("Byte Array %v \t Tyep: %T \n", byteArr, byteArr)
+
+	/*
+		rune is an alias for int32 and is equivalent to int32 in all ways
+	*/
+
+	runeTest := 'r'
+	fmt.Printf("Rune  %v \t Tyep: %T \n", runeTest, runeTest)
+
+
+
 }
