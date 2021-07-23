@@ -22,6 +22,9 @@ func multipleReturn(one, two int)(add, sub, multi, div int){
 /*
 	N.B: If you want to access any functions or variable outside of the package 
 	it names should start with capital latter, upper case or camel case. 
+
+	roll: 9101083
+	reg: 15226126324
 */
 
 func main(){
